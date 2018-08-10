@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var rightId = "wjdekdns";
+        var rightPw = "wjdekdns";
+        function login(id, pw) {
+            if (id == rightId) {
+                if (pw == rightPw) {
+                    document.write(id + "님의 방문을환영합니다");
+                } else {
+                    alert("잘못된 비밀번호입니다.");
+                }
+            } else {
+                alert("잘못된 아이디 입니다.")
+            }
+        }
+
+        var userId = prompt("아이디를 입력해주세요","");
+        var userPw = prompt("비밀번호를 입력해주세요","");
+
+        login(userId, userPw);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
