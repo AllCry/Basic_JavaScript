@@ -9,13 +9,24 @@
     <script src="../js/jquery-migrate-1.4.1.min.js"></script>
     <script>
         $(function(){
-            $("*").css("border", "1px solid blue");
+            var style_1 = {
+                "background-color":"#0ff",
+                "border":"2px solid #f00"
+            }
+            
+            $(".txt").siblings()
+            .css(style_1);
+
         });
     </script>
 </head>
 <body>
-    <h1>제이쿼리</h1>
-    <h2>선택자</h2>
-    <h3>직접 선택자</h3>
+    <div id="wrap">
+        <h1>인접 관계 선택자</h1>
+        <p>내용1</p>
+        <p class="txt">내용2</p>
+        <p>내용3</p>
+        <p>내용4</p>
+    </div>
 </body>
 </html>

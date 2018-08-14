@@ -9,13 +9,19 @@
     <script src="../js/jquery-migrate-1.4.1.min.js"></script>
     <script>
         $(function(){
-            $("*").css("border", "1px solid blue");
+            $(".txt1").closest("div")
+            .css({
+                "border":"2px solid #f00"
+            });
         });
     </script>
 </head>
 <body>
-    <h1>제이쿼리</h1>
-    <h2>선택자</h2>
-    <h3>직접 선택자</h3>
+    <h1 class="title">선택자</h1>
+    <div>
+        <div>
+            <p class="txt1">내용</p>
+        </div>
+    </div>
 </body>
 </html>
